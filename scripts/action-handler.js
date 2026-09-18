@@ -27,7 +27,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
         inventoryActions = null
         spellActions = null
 
-        mapLabel = coreModule.api.Utils.i18n('SF2E.MAPAbbreviationLabel').replace(' {penalty}', '')
+        mapLabel = coreModule.api.Utils.i18n('PF2E.MAPAbbreviationLabel').replace(' {penalty}', '')
 
         /**
          * Build System Actions
@@ -272,7 +272,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
 
             if (attack) {
                 const id = attack.slug
-                const name = coreModule.api.Utils.i18n('SF2E.AttackLabel')
+                const name = coreModule.api.Utils.i18n('PF2E.AttackLabel')
                 const actionTypeName = `${coreModule.api.Utils.i18n(ACTION_TYPE[actionType])}: ` ?? ''
                 const listName = `${actionTypeName}${name}`
                 const encodedValue = [actionType, id].join(this.delimiter)
@@ -473,7 +473,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
                 // Get actions
                 actions = [{
                     id: 'heroPoints',
-                    name: coreModule.api.Utils.i18n('SF2E.Actor.Resource.HeroPoints'),
+                    name: coreModule.api.Utils.i18n('PF2E.Actor.Resource.HeroPoints'),
                     encodedValue: [actionType, actionType].join(this.delimiter),
                     info1: { text: (max > 0) ? `${value ?? 0}/${max}` : '' }
                 }]
@@ -488,7 +488,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
                 // Get actions
                 actions = [{
                     id: 'mythicPoints',
-                    name: coreModule.api.Utils.i18n('SF2E.Actor.Resource.MythicPoints'),
+                    name: coreModule.api.Utils.i18n('PF2E.Actor.Resource.MythicPoints'),
                     encodedValue: [actionType, actionType].join(this.delimiter),
                     info1: { text: (max > 0) ? `${value ?? 0}/${max}` : '' }
                 }]
@@ -690,8 +690,8 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
             const actions = []
 
             if (this.actorType !== 'hazard') {
-                const initiative = this.actor ? this.actor.system.initiative : coreModule.api.Utils.i18n('SF2E.PerceptionLabel')
-                const fullName = coreModule.api.Utils.i18n('SF2E.PerceptionLabel')
+                const initiative = this.actor ? this.actor.system.initiative : coreModule.api.Utils.i18n('PF2E.PerceptionLabel')
+                const fullName = coreModule.api.Utils.i18n('PF2E.PerceptionLabel')
                 const name = this.abbreviatedSkills ? SKILL_ABBREVIATION.perception ?? fullName : fullName
                 const actionTypeName = `${coreModule.api.Utils.i18n(ACTION_TYPE[actionType])}: ` ?? ''
                 const listName = `${actionTypeName}${name}`
@@ -930,8 +930,8 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
          */
         async #buildPerceptionCheck () {
             const actionType = 'perceptionCheck'
-            const perception = this.actor ? this.actor.system.perception : coreModule.api.Utils.i18n('SF2E.PerceptionLabel')
-            const name = coreModule.api.Utils.i18n('SF2E.PerceptionLabel')
+            const perception = this.actor ? this.actor.system.perception : coreModule.api.Utils.i18n('PF2E.PerceptionLabel')
+            const name = coreModule.api.Utils.i18n('PF2E.PerceptionLabel')
             const modifier = coreModule.api.Utils.getModifier(perception?.totalModifier)
             const info1 = this.actor ? { text: modifier } : ''
             const tooltipName = `${name}${(this.actor && modifier) ? ` ${modifier}` : ''}`
@@ -968,7 +968,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
                 // Get actions
                 const actions = [{
                     id: actionType,
-                    name: coreModule.api.Utils.i18n('SF2E.Check.Specific.Recovery'),
+                    name: coreModule.api.Utils.i18n('PF2E.Check.Specific.Recovery'),
                     encodedValue: [actionType, actionType].join(this.delimiter)
                 }]
 
@@ -993,12 +993,12 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
             const actions = [
                 {
                     id: 'treatWounds',
-                    name: coreModule.api.Utils.i18n('SF2E.Actions.TreatWounds.Label'),
+                    name: coreModule.api.Utils.i18n('PF2E.Actions.TreatWounds.Label'),
                     encodedValue: [actionType, 'treatWounds'].join(this.delimiter)
                 },
                 {
                     id: 'rest',
-                    name: coreModule.api.Utils.i18n('SF2E.Actor.Character.Rest.Label'),
+                    name: coreModule.api.Utils.i18n('PF2E.Actor.Character.Rest.Label'),
                     encodedValue: [actionType, 'rest'].join(this.delimiter)
                 }
             ]
@@ -1735,7 +1735,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
                             const isMap = variant.label.includes(this.mapLabel)
                             const modifier = (isMap)
                                 ? variant.label.split(' ')[0]
-                                : variant.label.replace(coreModule.api.Utils.i18n('SF2E.WeaponStrikeLabel'), '').replace(' ', '')
+                                : variant.label.replace(coreModule.api.Utils.i18n('PF2E.WeaponStrikeLabel'), '').replace(' ', '')
                             const name = (this.calculateAttackPenalty) ? modifier : variant.label
                             return {
                                 id,
@@ -1747,7 +1747,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
 
                         // Get Damage
                         const damageId = encodeURIComponent(`${strike.item.id}>${strike.slug}>damage>${usage}`)
-                        const damageName = coreModule.api.Utils.i18n('SF2E.DamageLabel')
+                        const damageName = coreModule.api.Utils.i18n('PF2E.DamageLabel')
                         actions.push({
                             id: damageId,
                             name: damageName,
@@ -1758,7 +1758,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
 
                         // Get Critical
                         const criticalId = encodeURIComponent(`${strike.item.id}>${strike.slug}>critical>${usage}`)
-                        const criticalName = coreModule.api.Utils.i18n('SF2E.CriticalDamageLabel')
+                        const criticalName = coreModule.api.Utils.i18n('PF2E.CriticalDamageLabel')
                         actions.push({
                             id: criticalId,
                             name: criticalName,
@@ -2106,7 +2106,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
                     name: entity.label,
                     descriptionLocalised: this.#getStrikeDescription(entity),
                     modifiers: entity.modifiers,
-                    properties: chatData.properties?.filter(property => property !== 'SF2E.WeaponTypeMartial'),
+                    properties: chatData.properties?.filter(property => property !== 'PF2E.WeaponTypeMartial'),
                     traits: entity.traits,
                     traitsAlt: entity.weaponTraits
                 }
@@ -2191,8 +2191,8 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
          */
         #getStrikeDescription (strike) {
             const description = (strike?.description) ? `<p>${coreModule.api.Utils.i18n(strike?.description)}</p>` : ''
-            const criticalSuccess = (strike?.criticalSuccess) ? `<hr><h4>${coreModule.api.Utils.i18n('SF2E.Check.Result.Degree.Check.criticalSuccess')}</h4><p>${coreModule.api.Utils.i18n(strike?.criticalSuccess)}</p>` : ''
-            const success = (strike?.success) ? `<h4>${coreModule.api.Utils.i18n('SF2E.Check.Result.Degree.Check.success')}</h4><p>${coreModule.api.Utils.i18n(strike?.success)}</p>` : ''
+            const criticalSuccess = (strike?.criticalSuccess) ? `<hr><h4>${coreModule.api.Utils.i18n('PF2E.Check.Result.Degree.Check.criticalSuccess')}</h4><p>${coreModule.api.Utils.i18n(strike?.criticalSuccess)}</p>` : ''
+            const success = (strike?.success) ? `<h4>${coreModule.api.Utils.i18n('PF2E.Check.Result.Degree.Check.success')}</h4><p>${coreModule.api.Utils.i18n(strike?.success)}</p>` : ''
             return `${description}${criticalSuccess}${success}`
         }
     }
