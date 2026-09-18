@@ -1,20 +1,49 @@
 {
-  "tokenActionHud": {
-    "template": {
-      "armor": "Armor",
-      "containers": "Containers",
-      "consumables": "Consumables",
-      "equipment": "Equipment",
-      "inventory": "Inventory",
-      "item": "Item",
-      "weapons": "Weapons",
-      "treasure": "Treasure",
-      "settings": {
-        "displayUnequipped": {
-          "hint": "Choose whether to display unequipped items on the HUD",
-          "name": "Display Unequipped"
-        }
-      }
-    }
-  }
+    "tokenActionHud.sf2e.armor": "Armor",
+    "tokenActionHud.sf2e.attribute": "Attribute",
+    "tokenActionHud.sf2e.attributes": "Attributes",
+    "tokenActionHud.sf2e.consumables": "Consumables",
+    "tokenActionHud.sf2e.containers": "Containers",
+    "tokenActionHud.sf2e.equipment": "Equipment",
+    "tokenActionHud.sf2e.heroAction": "Hero Action",
+    "tokenActionHud.sf2e.heroActions": "Hero Actions",
+    "tokenActionHud.sf2e.inventory": "Inventory",
+    "tokenActionHud.sf2e.noAmmo": "No Ammo",
+    "tokenActionHud.sf2e.otherConditions": "Other",
+    "tokenActionHud.sf2e.rests": "Rests",
+    "tokenActionHud.sf2e.save": "Save",
+    "tokenActionHud.sf2e.setting.addAuxiliaryActions.hint": "Choose whether to add auxiliary actions for strikes by default",
+    "tokenActionHud.sf2e.setting.addAuxiliaryActions.name": "Add Auxiliary Actions",
+    "tokenActionHud.sf2e.setting.addDamageAndCritical.hint": "Choose whether to add damage and critical actions for strikes by default",
+    "tokenActionHud.sf2e.setting.addDamageAndCritical.name": "Add Damage and Critical",
+    "tokenActionHud.sf2e.setting.addStowedItems.choice.both": "Container and Non-Container Groups",
+    "tokenActionHud.sf2e.setting.addStowedItems.choice.containers": "Container Groups Only",
+    "tokenActionHud.sf2e.setting.addStowedItems.choice.nonContainers": "Non-Container Groups Only",
+    "tokenActionHud.sf2e.setting.addStowedItems.choice.none": "No Groups",
+    "tokenActionHud.sf2e.setting.addStowedItems.hint": "Choose where to add stowed items",
+    "tokenActionHud.sf2e.setting.addStowedItems.name": "Add Stowed Items",
+    "tokenActionHud.sf2e.setting.addUnequippedItems.hint": "Choose whether to add unequipped items by default",
+    "tokenActionHud.sf2e.setting.addUnequippedItems.name": "Add Unequipped Items",
+    "tokenActionHud.sf2e.setting.calculateAttackPenalty.hint": "Display the calculated attack penalty (Attack Modifier minus MAP) for Strikes",
+    "tokenActionHud.sf2e.setting.calculateAttackPenalty.name": "Display Calculated Attack Penalty",
+    "tokenActionHud.sf2e.setting.colorSkills.hint": "Choose whether to color skills by their rank",
+    "tokenActionHud.sf2e.setting.colorSkills.name": "Color Skills by Rank",
+    "tokenActionHud.sf2e.setting.showStrikeImages.hint": "Choose whether to show strike images by default",
+    "tokenActionHud.sf2e.setting.showStrikeImages.name": "Show Strike Images",
+    "tokenActionHud.sf2e.setting.showStrikeNames.hint": "Choose whether to show strike names by default",
+    "tokenActionHud.sf2e.setting.showStrikeNames.name": "Show Strike Names",
+    "tokenActionHud.sf2e.setting.showStrikeTraits.hint": "Choose whether to show strike traits by default (requires Show Strike Names)",
+    "tokenActionHud.sf2e.setting.showStrikeTraits.name": "Show Strike Traits",
+    "tokenActionHud.sf2e.setting.splitStrikes.hint": "Choose whether to split the main usage of strikes into their own group by default",
+    "tokenActionHud.sf2e.setting.splitStrikes.name": "Split Strike Main Usage",
+    "tokenActionHud.sf2e.shields": "Shields",
+    "tokenActionHud.sf2e.skillAction": "Skill Action",
+    "tokenActionHud.sf2e.skillActions": "Skill Actions",
+    "tokenActionHud.sf2e.skillActionsGrouped": "Grouped Skill Actions",
+    "tokenActionHud.sf2e.skillActionsUngrouped": "Ungrouped Skill Actions",
+    "tokenActionHud.sf2e.socialConditions": "Social",
+    "tokenActionHud.sf2e.takeBreather": "Take a Breather",
+    "tokenActionHud.sf2e.toggle": "Toggle",
+    "tokenActionHud.sf2e.treasure": "Treasure",
+    "tokenActionHud.sf2e.weapons": "Weapons"
 }
