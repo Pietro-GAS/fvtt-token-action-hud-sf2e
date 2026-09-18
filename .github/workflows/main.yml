@@ -44,7 +44,7 @@ jobs:
       #
       # The version will be used by later steps to fill in the value for the
       # "version" key required for a valid module manifest.
-      - name: Extract Version From Tag
+      - name: Extract Version Number From Tag
         id: get_version
         uses: battila7/get-version-action@v2
 
