@@ -4,8 +4,8 @@
   "description": "Token Action HUD is a repositionable HUD of actions for a selected token",
   "authors": [
     {
-      "name": "Larkinabout",
-      "url": "https://github.com/Larkinabout"
+      "name": "Pietro-GAS",
+      "url": "https://github.com/Pietro-GAS"
     }
   ],
   "url": "This is auto replaced",
@@ -65,7 +65,7 @@
   "socket": false,
   "manifest": "This is auto replaced",
   "download": "This is auto replaced",
-  "readme": "https://github.com/Larkinabout/fvtt-token-action-hud-template#readme",
+  "readme": "https://github.com/Pietro-GAS/fvtt-token-action-hud-sf2e#readme",
   "protected": false,
   "coreTranslation": false,
   "library": false
