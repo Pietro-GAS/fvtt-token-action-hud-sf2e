@@ -3,15 +3,12 @@ import { MODULE } from './constants.js'
 export let Utils = null
 
 Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
-    /**
-     * Utility functions
-     */
     Utils = class Utils {
         /**
-         * Get setting
+         * Get setting value
          * @param {string} key               The key
          * @param {string=null} defaultValue The default value
-         * @returns {string}                 The setting value
+         * @returns                          The setting value
          */
         static getSetting (key, defaultValue = null) {
             let value = defaultValue ?? null
@@ -24,7 +21,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
         }
 
         /**
-         * Set setting
+         * Set setting value
          * @param {string} key   The key
          * @param {string} value The value
          */
