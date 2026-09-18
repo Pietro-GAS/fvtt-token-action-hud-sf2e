@@ -16,7 +16,7 @@
     "verified": "11.313"
   },
   "esmodules": [
-    "./scripts/init.js"
+    "./scripts/token-action-hud-sf2e.min.js"
   ],
   "scripts": [
   ],
@@ -34,12 +34,12 @@
   "relationships": {
     "systems": [
       {
-        "id": "template",
+        "id": "sf2e",
         "type": "system",
         "compatibility": [
           {
-            "minimum": "1.0.0",
-            "verified": "1.0.0"
+            "minimum": "1.5.0",
+            "verified": "1.5.1"
           }
         ]
       }
@@ -50,9 +50,9 @@
         "type": "module",
         "compatibility": [
           {
-            "minimum": "1.5.0",
-            "maximum": "1.5",
-            "verified": "1.5.0"
+            "minimum": "2.1.0",
+            "maximum": "2.1.1",
+            "verified": "2.1.1"
           }
         ]
       }
