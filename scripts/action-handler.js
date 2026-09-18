@@ -355,7 +355,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
 
             // Get conditions
             // Conditions are duplicated in the ConditionManager and the name scaled conditions is suffixed with ' 1'
-            const conditions = [...game.sf2e.ConditionManager.conditions]
+            const conditions = [...game.pf2e.ConditionManager.conditions]
                 .filter(([conditionId]) => !conditionId.startsWith('Compendium'))
                 .map(([conditionId, conditionData]) => {
                     conditionData.name = conditionData.name.replace(' 1', '')

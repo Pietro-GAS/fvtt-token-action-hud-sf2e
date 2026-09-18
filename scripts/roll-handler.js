@@ -256,7 +256,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
             const item = actor?.items?.get(actionId)
 
             if (item) {
-                game.sf2e.rollItemMacro(actionId)
+                game.pf2e.rollItemMacro(actionId)
             }
         }
 
