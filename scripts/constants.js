@@ -63,17 +63,17 @@ export const ACTION_TYPE = {
     attribute: 'tokenActionHud.sf2e.attribute',
     condition: 'TYPES.Item.condition',
     effect: 'TYPES.Item.effect',
-    familiarAttack: 'SF2E.AttackLabel',
-    feat: 'SF2E.Item.Feat.LevelLabel',
+    familiarAttack: 'PF2E.AttackLabel',
+    feat: 'PF2E.Item.Feat.LevelLabel',
     heroAction: 'tokenActionHud.sf2e.heroAction',
-    initiative: 'SF2E.InitiativeLabel',
-    item: 'SF2E.ItemTitle',
+    initiative: 'PF2E.InitiativeLabel',
+    item: 'PF2E.ItemTitle',
     save: 'tokenActionHud.sf2e.save',
-    skill: 'SF2E.SkillLabel',
+    skill: 'PF2E.SkillLabel',
     skillAction: 'tokenActionHud.sf2e.skillAction',
     spell: 'TYPES.Item.spell',
-    strike: 'SF2E.WeaponStrikeLabel',
-    strikeAuxiliaryAction: 'SF2E.WeaponStrikeLabel',
+    strike: 'PF2E.WeaponStrikeLabel',
+    strikeAuxiliaryAction: 'PF2E.WeaponStrikeLabel',
     toggle: 'tokenActionHud.sf2e.toggle',
     utility: 'tokenActionHud.utility'
 }
@@ -84,27 +84,27 @@ export const ACTION_TYPE = {
 export const CARRY_TYPE_ICON = {
     attached: {
         icon: '<i class="fas fa-paperclip fa-fw">',
-        tooltip: 'SF2E.CarryType.attached'
+        tooltip: 'PF2E.CarryType.attached'
     }, 
     held1: {
         icon: '<span class="fa-stack fa-fw fa-2xs" data-tooltip="placeholder"><i class="fa-solid fa-hand-back-fist fa-stack-2x"></i><i class="fab fa-1 fa-stack-1x" style="filter: invert(1);"></i></span>',
-        tooltip: 'SF2E.CarryType.held1'
+        tooltip: 'PF2E.CarryType.held1'
     },
     held2: {
         icon: '<span class="fa-stack fa-fw fa-2xs" data-tooltip="placeholder"><i class="fa-solid fa-hand-back-fist fa-stack-2x"></i><i class="fab fa-2 fa-stack-1x" style="filter: invert(1);"></i></span>',
-        tooltip: 'SF2E.CarryType.held2'
+        tooltip: 'PF2E.CarryType.held2'
     },
     dropped: {
         icon: '<i class="fas fa-grip-lines fa-fw" data-tooltip="placeholder"></i>',
-        tooltip: 'SF2E.CarryType.dropped'
+        tooltip: 'PF2E.CarryType.dropped'
     },
     stowed: {
         icon: '<i class="fas fa-box fa-fw" data-tooltip="placeholder"></i>',
-        tooltip: 'SF2E.CarryType.stowed'
+        tooltip: 'PF2E.CarryType.stowed'
     },
     worn: {
         icon: '<i class="fas fa-tshirt fa-fw" data-tooltip="placeholder"></i>',
-        tooltip: 'SF2E.CarryType.worn'
+        tooltip: 'PF2E.CarryType.worn'
     }
 }
 
@@ -125,9 +125,9 @@ export const ITEM_TYPE = {
  * Modular options
  */
 export const MODULAR_OPTION = {
-    bludgeoning: 'SF2E.TraitBludgeoning',
-    piercing: 'SF2E.TraitPiercing',
-    slashing: 'SF2E.TraitSlashing'
+    bludgeoning: 'PF2E.TraitBludgeoning',
+    piercing: 'PF2E.TraitPiercing',
+    slashing: 'PF2E.TraitSlashing'
 }
 
 /**
