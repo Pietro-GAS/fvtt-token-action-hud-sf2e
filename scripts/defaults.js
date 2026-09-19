@@ -17,7 +17,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
             {
                 nestId: 'attack',
                 id: 'attack',
-                name: coreModule.api.Utils.i18n('SF2E.AttackLabel'),
+                name: coreModule.api.Utils.i18n('PF2E.AttackLabel'),
                 groups: [
                     { ...groups.attack, nestId: 'attack_attack' }
                 ]
@@ -25,7 +25,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
             {
                 nestId: 'strikes',
                 id: 'strikes',
-                name: coreModule.api.Utils.i18n('SF2E.StrikesLabel'),
+                name: coreModule.api.Utils.i18n('PF2E.StrikesLabel'),
                 groups: [
                     { ...groups.toggles, nestId: 'strikes_toggles' },
                     { ...groups.strikes, nestId: 'strikes_strikes' }
@@ -35,7 +35,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
             {
                 nestId: 'actions',
                 id: 'actions',
-                name: coreModule.api.Utils.i18n('SF2E.ActionsActionsHeader'),
+                name: coreModule.api.Utils.i18n('PF2E.ActionsActionsHeader'),
                 groups: [
                     { ...groups.actions, nestId: 'actions_actions' },
                     { ...groups.reactions, nestId: 'actions_reactions' },
@@ -46,7 +46,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
             {
                 nestId: 'inventory',
                 id: 'inventory',
-                name: coreModule.api.Utils.i18n('SF2E.TabInventoryLabel'),
+                name: coreModule.api.Utils.i18n('PF2E.TabInventoryLabel'),
                 groups: [
                     { ...groups.weapons, nestId: 'inventory_weapons' },
                     { ...groups.shields, nestId: 'inventory_shields' },
@@ -60,7 +60,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
             {
                 nestId: 'feats',
                 id: 'feats',
-                name: coreModule.api.Utils.i18n('SF2E.Item.Feat.Plural'),
+                name: coreModule.api.Utils.i18n('PF2E.Item.Feat.Plural'),
                 groups: [
                     { ...groups.ancestryFeatures, nestId: 'feats_ancestry-features' },
                     { ...groups.classFeatures, nestId: 'feats_class-features' },
@@ -74,7 +74,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
             {
                 nestId: 'spells',
                 id: 'spells',
-                name: coreModule.api.Utils.i18n('SF2E.Item.Spell.Plural'),
+                name: coreModule.api.Utils.i18n('PF2E.Item.Spell.Plural'),
                 groups: [
                     { ...groups.spells, nestId: 'spells_spells' }
                 ]
@@ -94,7 +94,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
             {
                 nestId: 'skills',
                 id: 'skills',
-                name: coreModule.api.Utils.i18n('SF2E.SkillsLabel'),
+                name: coreModule.api.Utils.i18n('PF2E.SkillsLabel'),
                 groups: [
                     { ...groups.coreSkills, nestId: 'skills_core-skills' },
                     { ...groups.loreSkills, nestId: 'skills_lore-skills' }
@@ -103,7 +103,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
             {
                 nestId: 'effects',
                 id: 'effects',
-                name: coreModule.api.Utils.i18n('SF2E.EffectsLabel'),
+                name: coreModule.api.Utils.i18n('PF2E.EffectsLabel'),
                 groups: [
                     { ...groups.conditions, nestId: 'effects_conditions' },
                     { ...groups.socialConditions, nestId: 'effects_social-conditions' },

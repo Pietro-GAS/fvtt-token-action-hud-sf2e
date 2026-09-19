@@ -8,7 +8,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
          * @param {string} id The macro id
          */
         async #executeMacroById (id) {
-            game.packs.get('sf2e.sf2e-macros').getDocument(id).then((e) => e.execute())
+            game.packs.get('sf2e.macros').getDocument(id).then((e) => e.execute())
         }
 
         /**
@@ -400,7 +400,7 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
          */
         async #rollInitiative (actor, actionId) {
             if (actor.inCombat && actor.combatant?.initiative) {
-                coreModule.api.Logger.info(game.i18n.format('SF2E.Encounter.AlreadyRolled', { actor: actor.name }), true)
+                coreModule.api.Logger.info(game.i18n.format('PF2E.Encounter.AlreadyRolled', { actor: actor.name }), true)
             } else {
                 await actor.update({ 'system.initiative.statistic': actionId })
 
