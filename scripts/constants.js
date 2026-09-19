@@ -190,7 +190,7 @@ export const GROUP = {
     armor: { id: 'armor', name: 'tokenActionHud.sf2e.armor', type: 'system' },
     equipment: { id: 'equipment', name: 'tokenActionHud.sf2e.equipment', type: 'system' },
     consumables: { id: 'consumables', name: 'tokenActionHud.sf2e.consumables', type: 'system' },
-    containers: { id: 'containers', name: 'PF2E.Item.Container.Plural', type: 'system' },
+    containers: { id: 'containers', name: 'tokenActionHud.sf2e.containers', type: 'system' },
     treasure: { id: 'treasure', name: 'tokenActionHud.sf2e.treasure', type: 'system' },
     ancestryFeatures: { id: 'ancestry-features', name: 'PF2E.Actor.Character.FeatSlot.AncestryFeaturesHeader', type: 'system' },
     classFeatures: { id: 'class-features', name: 'PF2E.Actor.Character.FeatSlot.ClassFeaturesHeader', type: 'system' },
